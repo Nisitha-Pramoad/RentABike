@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="230227c6-ac96-4d3b-a74e-a9313212e454">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM booking;]]>
+	</queryString>
+	<field name="bookingId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bookingId"/>
+		<property name="com.jaspersoft.studio.field.label" value="bookingId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="chooseBike" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="chooseBike"/>
+		<property name="com.jaspersoft.studio.field.label" value="chooseBike"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="PickUpLocation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PickUpLocation"/>
+		<property name="com.jaspersoft.studio.field.label" value="PickUpLocation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="pickUpDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="pickUpDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="pickUpDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="pickUpTime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="pickUpTime"/>
+		<property name="com.jaspersoft.studio.field.label" value="pickUpTime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="dropOffLocation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dropOffLocation"/>
+		<property name="com.jaspersoft.studio.field.label" value="dropOffLocation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="dropOffDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="dropOffDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="dropOffDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<field name="dropOffTime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dropOffTime"/>
+		<property name="com.jaspersoft.studio.field.label" value="dropOffTime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="booking"/>
+	</field>
+	<group name="bookingId">
+		<groupExpression><![CDATA[$F{bookingId}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="85" backcolor="#030303" uuid="52c990b8-8458-497e-b251-3bb9a186e8fc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="235" y="26" width="100" height="30" forecolor="#FFFFFF" uuid="cd329f14-0708-4718-8636-bc7c3b093e6e"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Booking]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="30" backcolor="#B5B5B5" uuid="55b2b6fe-1034-4522-a8df-5e9547adbe78"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="30" uuid="2f8e529e-64d1-4888-896e-0477f416a7dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07e7a350-2150-438f-91ec-d6fda92f4fca"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[bookingId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="70" height="30" uuid="26c0f3dd-01a6-455b-83b0-259acf6af250">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f359d2ae-4c5f-4971-9e0b-bb7fe259afd4"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[chooseBike]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="0" width="90" height="30" uuid="e0feca86-735a-4702-bfca-93fc938d32ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="685bed57-535a-424c-8f09-81a7c28f72eb"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PickUpLocation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="69" height="30" uuid="b4cc69d2-ee4a-4476-935a-1fb61b2ace9b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ef9a0ac-4a18-49a4-921b-64336482d720"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pickUpDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="69" height="30" uuid="fa3cfa38-0e20-45c4-bba6-e9a734775119">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="08af5767-1352-447b-a3f5-83ba1117e822"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[pickUpTime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="69" height="30" uuid="98761b98-0b23-49e1-9555-b94ee59f26de">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fc08409-9b40-480e-9059-4e7470cb7f43"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[dropOffLocation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="69" height="30" uuid="ff76100f-3226-4341-8e4b-218add35e440">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aac5ef51-df6e-4772-ad92-2a62492b5c98"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[dropOffDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="486" y="0" width="69" height="30" uuid="9e2606c2-1b19-4b56-a9e9-a07b8261f65b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0aa34b4-f520-46cb-b021-a8fc78670725"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[dropOffTime]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="72" height="30" uuid="bcabf607-e256-4d8a-9c7e-a368679f52a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07e7a350-2150-438f-91ec-d6fda92f4fca"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bookingId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="0" width="69" height="30" uuid="7c47e8cc-783c-47c7-bab4-e85b5d6f56c9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f359d2ae-4c5f-4971-9e0b-bb7fe259afd4"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{chooseBike}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="69" height="30" uuid="9d14625a-e734-45f9-bf5f-ae646eaaf046">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="685bed57-535a-424c-8f09-81a7c28f72eb"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{PickUpLocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="69" height="30" uuid="08516c31-b204-4d98-91a2-4e1d02bf3ec2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4ef9a0ac-4a18-49a4-921b-64336482d720"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{pickUpDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="69" height="30" uuid="8919f5e7-8772-4d52-b48e-b44926dd13db">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="08af5767-1352-447b-a3f5-83ba1117e822"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{pickUpTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="0" width="69" height="30" uuid="9c4dafa4-a1eb-4121-a11c-4b1e3eb41dca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fc08409-9b40-480e-9059-4e7470cb7f43"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dropOffLocation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="69" height="30" uuid="f793fac8-61f2-4722-9514-e7324f65538f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="aac5ef51-df6e-4772-ad92-2a62492b5c98"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dropOffDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="0" width="69" height="30" uuid="0be69955-62f3-4640-91a0-5fa84d0b026d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a0aa34b4-f520-46cb-b021-a8fc78670725"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dropOffTime}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

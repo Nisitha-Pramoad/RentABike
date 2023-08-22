@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.rentabike.controller.DashboardFormcontroller">
+   <children>
+      <ImageView fitHeight="770.0" fitWidth="1369.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/pexels-adam-dubec-1595483%20copy.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="195.0" fitWidth="739.0" layoutX="356.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/ava.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="225.0" layoutX="607.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/att.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="121.0" fitWidth="1049.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="113.0" fitWidth="1048.0" layoutX="239.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/pro.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="7.0" layoutY="113.0" prefHeight="625.0" prefWidth="142.0" style="-fx-background-color: #000000; -fx-background-radius: 25;">
+         <children>
+            <JFXButton fx:id="dashboardbtn" layoutX="46.0" layoutY="45.0" onAction="#btnDashboardOnAction" text="dashboard">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/🦆%20icon%20_home_.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bookingbtn" layoutX="54.0" layoutY="118.0" onAction="#btnBookingOnAction" text="booking">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/Vector.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="vehiclebtn" layoutX="52.0" layoutY="176.0" onAction="#btnVehicleOnAction" text="vehicle">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/Group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="customerbtn" layoutX="52.0" layoutY="221.0" onAction="#btnCustomerOnAction" text="customer">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/person_pin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="employeebtn" layoutX="54.0" layoutY="274.0" onAction="#btnEmployeeManagementOnAction" text="employee">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/emoji_transportation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="billingbtn" layoutX="58.0" layoutY="335.0" onAction="#btnBillingOnAction" text="billing">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="19.0">
+                     <image>
+                        <Image url="@../img/icon/Vector.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="settingbtn" layoutX="54.0" layoutY="464.0" onAction="#btnSettingOnAction" text="setting">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="reportbtn" layoutX="52.0" layoutY="399.0" onAction="#btnReportOnAction" text="report">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/Assessment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="logoutbtn" layoutX="33.0" layoutY="549.0" onAction="#btnLogOutOnAction" text="logout">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="70.0">
+                     <image>
+                        <Image url="@../img/rent%20a%20bike/PngItem_4042710.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Text layoutX="601.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Availability  Status">
+         <font>
+            <Font name="Audi Type Wide Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="424.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="407.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bikes">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="566.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="546.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="scooter">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="730.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="707.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bicycle">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="892.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="881.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="car">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="1033.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="1008.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="three wheel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="646.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendence">
+         <font>
+            <Font name="Audi Type Wide Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="730.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="616.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit Overview">
+         <font>
+            <Font name="Audi Type Wide Bold" size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="277.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="day /">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="525.0" layoutY="659.0" strokeType="OUTSIDE" strokeWidth="0.0" text="week /">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="788.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="month /">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="1080.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="year /">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblAvailableBikes" layoutX="393.0" layoutY="143.0" text="3">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalBikes" layoutX="434.0" layoutY="168.0" text="8">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPresent" layoutX="699.0" layoutY="381.0" text="3">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDayProfit" layoutX="317.0" layoutY="626.0" text="25">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailableScooters" layoutX="535.0" layoutY="143.0" text="5">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAllScootersCount" layoutX="576.0" layoutY="168.0" text="12">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailableBicycle" layoutX="699.0" layoutY="142.0" text="4">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAllBicycleCount" layoutX="740.0" layoutY="168.0" text="5">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailableCars" layoutX="862.0" layoutY="142.0" text="2">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAllCarsCount" layoutX="902.0" layoutY="168.0" text="2">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailableThreeWheels" layoutX="1009.0" layoutY="144.0" text="1">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAllThreewheelCount" layoutX="1044.0" layoutY="168.0" text="4">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalEmployee" layoutX="740.0" layoutY="406.0" text="8">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWeeklyProfit" layoutX="573.0" layoutY="624.0" text="155">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMonthlyProfits" layoutX="847.0" layoutY="625.0" text="750">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYearlyProfits" layoutX="1126.0" layoutY="624.0" text="9150">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="54.0" layoutX="51.0" layoutY="26.0">
+         <image>
+            <Image url="@../img/rent%20a%20bike/logo/black.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="148.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

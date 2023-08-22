@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report7" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b9e0dfe9-085a-43ee-82bf-84a2ef4d6093">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM vehicle;]]>
+	</queryString>
+	<field name="vehicleId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="vehicleId"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicleId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="type"/>
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="rent_price" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="rent_price"/>
+		<property name="com.jaspersoft.studio.field.label" value="rent_price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="mileage" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="mileage"/>
+		<property name="com.jaspersoft.studio.field.label" value="mileage"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="first_aid_kit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="first_aid_kit"/>
+		<property name="com.jaspersoft.studio.field.label" value="first_aid_kit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="transmission" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="transmission"/>
+		<property name="com.jaspersoft.studio.field.label" value="transmission"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="roadside_assistance" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="roadside_assistance"/>
+		<property name="com.jaspersoft.studio.field.label" value="roadside_assistance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<field name="available" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="available"/>
+		<property name="com.jaspersoft.studio.field.label" value="available"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicle"/>
+	</field>
+	<group name="vehicleId">
+		<groupExpression><![CDATA[$F{vehicleId}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="79" backcolor="#030303" uuid="ff99cd9b-15db-424f-8e07-6c8d46db610d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="221" y="20" width="120" height="49" forecolor="#FCFCFC" uuid="f33aa6bf-6a01-4be5-bf91-3e6b160bc21a"/>
+				<textElement>
+					<font size="29" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vehicle]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="40" backcolor="#B5B5B5" uuid="3b305e83-6412-4341-899b-2ce52443f7bb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="67" height="30" uuid="b81f1ea3-65e0-47e9-9890-ffea4fd65f92">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc5d6968-b99b-4ef2-ac4d-075787e92295"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[vehicleId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="0" width="61" height="30" uuid="4c831b2d-d021-457a-a333-674cf1e22053">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2104c681-2bc1-4856-bdd7-b204b05b65d0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="0" width="61" height="30" uuid="4e714da6-98c9-46bc-897d-67aa68f93f8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cc75329-9f45-4feb-99ec-30cd161622e4"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="0" width="51" height="30" uuid="98edcae1-6826-4ce1-8de3-6ac0fd59d0ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a4ce413b-946c-4cef-80a2-264f94ec4bbe"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[rent_price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="60" height="30" uuid="305531f2-315b-400c-a6a2-a4d1c5474f00">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="72e6256e-8948-4388-89d5-b21e8bed977c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[mileage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="60" height="30" uuid="3ec17d69-0dba-4d40-ba19-39b0d1c95ef3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="451cfdf1-af46-439f-bd8d-304a864d1c87"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[first-aid kit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="73" height="30" uuid="589cbf6d-0427-4798-8701-71e7533d8610">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fcb8090-1f04-43dc-bcb4-b4ae983d08ee"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[transmission]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="0" width="61" height="30" uuid="6c65a9e0-c54d-4629-9d37-09bffff7c3d2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b271d729-bd67-4bf0-bafb-a43da90cd58f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[assistance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="0" width="61" height="30" uuid="5e781d51-3dbd-41a6-8f98-085a648eee4a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23a793ec-9982-4bdd-9f22-d6d5684d9b45"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[available]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="67" height="30" uuid="4bf05da7-c604-4690-af88-089d99a4ad09">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc5d6968-b99b-4ef2-ac4d-075787e92295"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{vehicleId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="0" width="61" height="30" uuid="09bef19c-d470-4da9-b8b0-e61dbac91991">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2104c681-2bc1-4856-bdd7-b204b05b65d0"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="128" y="0" width="61" height="30" uuid="850a78c7-17d6-4cb9-98af-1fc5123fda32">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0cc75329-9f45-4feb-99ec-30cd161622e4"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="0" width="61" height="30" uuid="784ab4d9-0938-4b2a-8720-5457a5de327f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a4ce413b-946c-4cef-80a2-264f94ec4bbe"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{rent_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="0" width="61" height="30" uuid="10f9c190-c524-428b-b00b-180b72c47e15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="72e6256e-8948-4388-89d5-b21e8bed977c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{mileage}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="0" width="61" height="30" uuid="201f1064-ec30-4dbe-9a91-287eb76e05db">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="451cfdf1-af46-439f-bd8d-304a864d1c87"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{first_aid_kit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="0" width="61" height="30" uuid="a5f8acb1-6539-4a94-946b-8bb6c2be8558">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fcb8090-1f04-43dc-bcb4-b4ae983d08ee"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{transmission}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="0" width="61" height="30" uuid="566a2d55-d465-47e9-a558-f60b216ea4ae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b271d729-bd67-4bf0-bafb-a43da90cd58f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{roadside_assistance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="494" y="0" width="61" height="30" uuid="dbfb5278-7370-40a4-9743-4f46b9d0d85a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23a793ec-9982-4bdd-9f22-d6d5684d9b45"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{available}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="12" width="100" height="30" uuid="bcd8b91d-c5a4-4433-abf8-b51f79a3c652"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Thank you!]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

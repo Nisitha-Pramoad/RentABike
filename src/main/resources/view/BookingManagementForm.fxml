@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.rentabike.controller.BookingManagementFormController">
+   <children>
+      <ImageView fitHeight="787.0" fitWidth="1411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/pexels-adam-dubec-1595483%20copy.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblBooking" layoutX="80.0" layoutY="277.0" prefHeight="406.0" prefWidth="1204.0">
+        <columns>
+          <TableColumn fx:id="colBookingId" prefWidth="98.0" text="Booking Id" />
+          <TableColumn fx:id="colBikeType" prefWidth="145.0" text="Bike Type" />
+            <TableColumn fx:id="colPickuplocation" prefWidth="138.0" text="Pick-up location" />
+            <TableColumn fx:id="colPickupdate" minWidth="0.0" prefWidth="123.0" text="Pick-up date" />
+            <TableColumn fx:id="colPickuptime" prefWidth="104.0" text="Pick-up time" />
+            <TableColumn fx:id="colDropofflocation" minWidth="0.0" prefWidth="129.0" text="Drop-off location" />
+            <TableColumn fx:id="colDropoffdate" minWidth="0.0" prefWidth="123.0" text="Drop-off date" />
+            <TableColumn fx:id="colDropofftime" minWidth="0.0" prefWidth="105.0" text="Drop-off time" />
+            <TableColumn fx:id="colBookingStatus" minWidth="0.0" prefWidth="119.0" text="Status" />
+            <TableColumn fx:id="colActon" minWidth="0.0" prefWidth="118.0" text="action" />
+        </columns>
+      </TableView>
+      <Text layoutX="75.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking Management">
+         <font>
+            <Font name="Audi Type Wide Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField layoutX="1104.0" layoutY="188.0" prefHeight="38.0" prefWidth="174.0" />
+      <Text layoutX="1026.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="search :">
+         <font>
+            <Font name="Audi Type Wide Normal" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

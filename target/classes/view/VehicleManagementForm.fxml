@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.rentabike.controller.VehicleManagementFormController">
+   <children>
+      <ImageView fitHeight="787.0" fitWidth="1411.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/pexels-adam-dubec-1595483%20copy.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="102.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle Management">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblVehicleManagement" layoutX="81.0" layoutY="282.0" prefHeight="400.0" prefWidth="1204.0">
+         <columns>
+            <TableColumn fx:id="colVehicleId" prefWidth="118.0" text="vehicleId" />
+            <TableColumn fx:id="colVehicleName" prefWidth="153.0" text="name" />
+            <TableColumn fx:id="colType" prefWidth="122.0" text="type" />
+            <TableColumn fx:id="colRentPrice" minWidth="0.0" prefWidth="138.0" text="rent price" />
+            <TableColumn fx:id="colMileage" prefWidth="129.0" text="mileage" />
+            <TableColumn fx:id="colFirstAidKit" minWidth="0.0" prefWidth="145.0" text="first_aid_kit" />
+            <TableColumn fx:id="colTransmission" prefWidth="138.0" text="transmission" />
+            <TableColumn fx:id="colRoadsideAssistance" prefWidth="125.0" text="roadside_assistance" />
+            <TableColumn fx:id="colAvailable" prefWidth="135.0" text="available" />
+         </columns>
+      </TableView>
+      <TextField layoutX="948.0" layoutY="189.0" prefHeight="38.0" prefWidth="174.0" />
+      <Text layoutX="863.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="search :">
+         <font>
+            <Font name="Audi Type Wide Normal" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="1153.0" layoutY="183.0" mnemonicParsing="false" onAction="#btnVehicleManagementOnAction" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: black;" text="Edit" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

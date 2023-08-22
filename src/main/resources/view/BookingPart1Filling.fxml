@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.rentabike.controller.BookingFillingController">
+   <children>
+      <ImageView fitHeight="770.0" fitWidth="1369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/ceylon%20bg/pexels-adam-dubec-1595483%20copy.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="209.0" layoutY="79.0" prefHeight="647.0" prefWidth="1068.0" style="-fx-background-color: #ededed; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="txtCity" layoutX="370.0" layoutY="184.0" prefHeight="28.0" prefWidth="309.0" promptText="City" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+            <TextField fx:id="txtCountry" layoutX="777.0" layoutY="184.0" prefHeight="28.0" prefWidth="283.0" promptText="Country" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+            <TextField fx:id="txtZipCode" layoutX="40.0" layoutY="247.0" prefHeight="28.0" prefWidth="239.0" promptText="Zip Code" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+         </children></Pane>
+      <Button fx:id="BookingManagePagebtn" layoutX="1246.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnBookingManagePageOnAction" prefHeight="42.0" prefWidth="98.0" style="-fx-background-color: black;" text="Manage" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Pane layoutX="7.0" layoutY="113.0" prefHeight="625.0" prefWidth="142.0" style="-fx-background-color: #000000; -fx-background-radius: 25;">
+         <children>
+            <JFXButton fx:id="dashboardbtn" layoutX="46.0" layoutY="45.0" onAction="#btnDashboardOnAction" text="dashboard">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/🦆%20icon%20_home_.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="bookingbtn" layoutX="54.0" layoutY="118.0" onAction="#btnBookingOnAction" text="booking">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="25.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/Vector.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="vehiclebtn" layoutX="52.0" layoutY="176.0" onAction="#btnVehicleOnAction" text="vehicle">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/Group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="customerbtn" layoutX="52.0" layoutY="221.0" onAction="#btnCustomerOnAction" text="customer">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/person_pin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="employeebtn" layoutX="54.0" layoutY="274.0" onAction="#btnEmployeeManagementOnAction" text="employee">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/emoji_transportation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="billingbtn" layoutX="58.0" layoutY="335.0" onAction="#btnBillingOnAction" text="billing">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="19.0">
+                     <image>
+                        <Image url="@../img/icon/Vector.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="settingbtn" layoutX="54.0" layoutY="464.0" onAction="#btnSettingOnAction" text="setting">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="reportbtn" layoutX="52.0" layoutY="399.0" onAction="#btnReportOnAction" text="report">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="29.0">
+                     <image>
+                        <Image url="@../img/icon/Rent%20a%20bike%20Ui%20Portfolio/Assessment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="logoutbtn" layoutX="33.0" layoutY="549.0" onAction="#btnLogOutOnAction" text="logout">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="70.0">
+                     <image>
+                        <Image url="@../img/rent%20a%20bike/PngItem_4042710.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="57.0" fitWidth="54.0" layoutX="51.0" layoutY="26.0">
+         <image>
+            <Image url="@../img/rent%20a%20bike/logo/black.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="243.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Information">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtFullName" layoutX="247.0" layoutY="145.0" prefHeight="28.0" prefWidth="1020.0" promptText="Full Name" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+      <TextField fx:id="txtAge" layoutX="248.0" layoutY="203.0" prefHeight="28.0" prefWidth="239.0" promptText="Age" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+      <TextField fx:id="txtPhoneNumber" layoutX="580.0" layoutY="205.0" prefHeight="28.0" prefWidth="309.0" promptText="Phone number" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+      <TextField fx:id="txtEmail" layoutX="983.0" layoutY="202.0" prefHeight="28.0" prefWidth="283.0" promptText="Email" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+      <TextField fx:id="txtAddress" layoutX="248.0" layoutY="265.0" prefHeight="28.0" prefWidth="239.0" promptText="Address" style="-fx-border-color: #808080; -fx-border-radius: 3;" />
+      <Text layoutX="247.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Your Vehicle">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cmbChooseBike" layoutX="247.0" layoutY="456.0" prefHeight="25.0" prefWidth="1017.0" promptText="Choose Bike" />
+      <JFXComboBox fx:id="cmbPickUpLocation" layoutX="247.0" layoutY="524.0" prefHeight="25.0" prefWidth="331.0" promptText="Pick-up location" />
+      <JFXComboBox fx:id="cmbPickUpTime" layoutX="1055.0" layoutY="532.0" prefHeight="25.0" prefWidth="207.0" promptText="12.00 pm" />
+      <JFXComboBox fx:id="cmbDropOffLocation" layoutX="247.0" layoutY="597.0" prefHeight="25.0" prefWidth="331.0" promptText="Drop-off location" />
+      <JFXComboBox fx:id="cmbDropOffTime" layoutX="1052.0" layoutY="599.0" prefHeight="25.0" prefWidth="211.0" promptText="12.00 pm" />
+      <DatePicker fx:id="dtpkPickUpLocation" layoutX="682.0" layoutY="526.0" prefHeight="25.0" prefWidth="293.0" />
+      <DatePicker fx:id="dtpkDropOffLocation" layoutX="684.0" layoutY="599.0" prefHeight="25.0" prefWidth="293.0" />
+      <Button layoutX="1113.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnBooknowOnAction" prefHeight="49.0" prefWidth="151.0" style="-fx-background-color: black;" text="Book Now" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

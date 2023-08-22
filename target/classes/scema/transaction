@@ -1,0 +1,55 @@
+public boolean saveOrder(String orderId, LocalDate orderDate, String customerId, List<OrderDetailDTO> orderDetails) {
+        /*Transaction*/
+        Connection connection = null;
+        try {
+            connection = DBConnection.getDbConnection().getConnection();
+            /*if order id already exist*/
+            if (orderDAO.exist(orderId)) {
+                return false;
+            }
+
+            connection.setAutoCommit(false);
+
+            OrderDTO orderDTO = new OrderDTO(orderId, orderDate, customerId);
+            boolean orderAdded = orderDAO.save(orderDTO);
+
+            if (!orderAdded) {
+                connection.rollback();
+                connection.setAutoCommit(true);
+                return false;
+            }
+
+            for (OrderDetailDTO detail : orderDetails) {
+                boolean odAdded = orderDetailsDAO.save(detail);
+
+                if (!odAdded) {
+                    connection.rollback();
+                    connection.setAutoCommit(true);
+                    return false;
+                }
+
+//                //Search & Update Item
+                ItemDTO item = findItem(detail.getItemCode());
+                item.setQtyOnHand(item.getQtyOnHand() - detail.getQty());
+
+
+                boolean itemUpdate = itemDAO.update(item);
+
+                if (!itemUpdate) {
+                    connection.rollback();
+                    connection.setAutoCommit(true);
+                    return false;
+                }
+            }
+
+            connection.commit();
+            connection.setAutoCommit(true);
+            return true;
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
