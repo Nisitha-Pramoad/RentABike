@@ -1,31 +1,38 @@
-The Rent A Bike System is a comprehensive bike rental solution designed for tourists and locals. This application provides a user-friendly interface for managing bike reservations, tracking availability, and handling customer data securely. It features real-time updates on bike availability and integrates financial reporting for business insights.
+The Rent A Bike System is a comprehensive bike rental solution tailored for both tourists and locals. It provides an intuitive interface for managing bike reservations, tracking real-time availability, and securely handling customer data. The system includes features for generating financial reports and maintaining business insights.
 
-Key Features:
+## Key Features
+- **Real-time Bike Availability:** Monitor and manage bike inventory with up-to-date availability.
+- **Customer Information Management:** Store and manage customer details and reservation history securely.
+- **Reservation System:** User-friendly interface for booking bikes and viewing reservation details.
+- **Financial Reporting:** Generate detailed reports on transactions and business performance.
 
-Real-time Bike Availability: View and manage bike inventory with up-to-date availability information.
-Customer Information Management: Securely store and manage customer data, including reservation history.
-Reservation System: Easy-to-use interface for booking bikes and viewing reservation details.
-Financial Reporting: Generate detailed reports on business performance and transactions.
-Technologies Used:
+## Technologies Used
+- **Java:** Core programming language for application development.
+- **JavaFX:** Used for building the graphical user interface.
+- **MySQL:** Database system for managing bike and customer data.
+- **Jasper Report:** Tool for generating comprehensive financial reports.
 
-Java: Core language for application development.
-JavaFX: For building the graphical user interface.
-MySQL: Database management for storing bike and customer data.
-Jasper Report: For generating comprehensive financial reports.
-Installation:
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Nisitha-Pramoad/RentABike.git
+   ```
+2. Import the project into your preferred Java IDE.
+3. Set up the MySQL database and configure connection settings.
+4. Build and run the project.
 
-Clone the repository: git clone https://github.com/Nisitha-Pramoad/RentABike.git
-Import the project into your preferred Java IDE.
-Set up the MySQL database and configure the connection settings in the application.
-Build and run the project.
-Usage:
+## Usage
+- Launch the application to manage bike reservations and view reports.
+- Use the admin panel to monitor availability and perform financial reporting.
 
-Launch the application and use the provided interface to manage bike reservations and view reports.
-Access the admin panel to monitor bike availability and perform financial reporting.
-Contributing:
-Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request with a description of your changes.
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your modifications and ensure code quality.
+4. Submit a pull request with a detailed description of your changes.
 
-License:
+## License
 This project is licensed under the MIT License.
 
 <p align="center">
